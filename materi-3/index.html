@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi-3</title>
+    <!-- CSS secara eksternal (linked) adalah salah satu metoda pemberian gaya pada halaman HTML. 
+        Metode ini dilakukan dengan menuliskan kode CSS dan menyimpannya sebagai file terpisah dengan file dokumen HTML. 
+        File berisi kode CSS tersebut disimpan dengan ekstensi .css 
+    -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<!-- contoh CSS Internal -->
+<!-- awal -->
+<style>
+    /* mengambil id pada tag <div id=app> */
+    #app {
+        /* background-color merupakan warna di belakang teks yang diterapkan pada elemen HTML */
+        background-color: green;
+    }
+
+    /* mengambil sebuah class pada tag <h1> dengan nama class heading-1-css-inline*/
+    .heading-1-css-inline {
+        background-color: crimson;
+        color: blue;
+    }
+
+    /* mengambil sebuah class pada tag <kalimat-css-inline> dengan nama kalimat-css-inline */
+    .kalimat-css-inline {
+        background-color: blue;
+        color: white;
+    }
+</style>
+<!-- penutup dari contoh CSS internal -->
+
+<body>
+    <!-- contoh dari CSS internal  -->
+    <hr>
+    <div id="app">
+        <h1 class="heading-1-css-inline">Contoh dari CSS Internal - Selamat Datang di Website Kita</h1>
+        <p>ini punya tag div id="app"</p>
+        <p class="kalimat-css-inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, odio.</p>
+    </div>
+    <hr />
+    <!-- div id="eep" adalah pemotongan atau pembatasan -->
+
+    <div id="epp">
+        <!-- contoh dari CSS Inline -->
+        <h1 style="background-color:black; color: white;">ini tulisan menggunakan CSS Inline</h1>
+        <p style="background-color: yellow; color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Autem aut esse nesciunt, voluptates quidem maxime
+            rem quam enim reiciendis id.</p>
+    </div>
+
+    <div id="opp">
+        <!-- contoh dari CSS Eksternal -->
+        <hr>
+        <h1 class="heading-1-css-eksternal">
+            ini tulisan menggunakan CSS Eksternal
+        </h1>
+        <p class="kalimat-css-eksternal">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <hr>
+</body>
+
+</html>
