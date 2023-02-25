@@ -1,0 +1,37 @@
+.container {
+  /*
+    penjelasan
+    - 1rem = 12px
+    - rem memudahkan agar mudah menyesuaikan layar
+    */
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* 
+    1) .box ini merupakan parent (induk) dari class box
+    2) .box merupakan class dari <div class="box"></div>"
+*/
+.box {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
+/* 
+    1) mengambil class container dan box, kemudian mempunyai anak sebanyak 4 buah (dari tiap2 class .box)
+    2) nth-child dapat diartikan sebagai anak dari class .box
+*/
+.container .box:nth-child(1) {
+  background-color: blueviolet;
+}
+.container .box:nth-child(2) {
+  background-color: brown;
+}
+.container .box:nth-child(3) {
+  background-color: cadetblue;
+}
+.container .box:nth-child(4) {
+  background-color: chocolate;
+}
